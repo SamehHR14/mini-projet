@@ -11,7 +11,7 @@ stages {
 stage ('Clone Stage') {
 steps {
 git 'https://github.com/SamehHR14/mini-projet.git'
-}
+
 stage ('Docker Build') {
 steps {
 sh 'docker build -t sameh010/aston-villa1:${DOCKER_TAG}.'
