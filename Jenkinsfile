@@ -10,7 +10,7 @@ DOCKER_TAG = getVersion()
 stages {
 stage ('Clone Stage') {
 steps {
-git https://gitlab.com/jmlhmd/datacamp_docker_angular.git'
+git 'https://github.com/SamehHR14/mini-projet.git'
 }
 }
 
