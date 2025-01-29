@@ -23,6 +23,14 @@ pipeline {
                 sh 'docker build -t sameh010/aston-ville1:${DOCKER_TAG} .'
             }
         }
+      stage ('DockerHub Push') {
+            steps {
+               
+                sh 'sudo docker login -u sialaraida -p RAIDA1234'
+               
+                sh 'sudo docker push sameh010/aston-ville1:${DOCKER_TAG}'
+            }
+        }
 
 
     }
