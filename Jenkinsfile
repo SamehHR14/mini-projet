@@ -17,7 +17,7 @@ steps {
 sh 'docker build -t sameh010/aston-villa1:${DOCKER_TAG}.'
 }
 }
-
+}
 }
 }
 def getVersion(){
